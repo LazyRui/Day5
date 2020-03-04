@@ -1,0 +1,20 @@
+activity
+                                                                                                            事件消失（失去作用）
+                DispathTouchEvent                                                                   OntouchEvent
+                                                                                                       true（处理）
+
+
+viewGroup
+                                                                                                        super/false(向上传递)
+
+                DispathTouchEvent                       onInterceptTouchEvent                       OntouchEvent
+                                                                                                        true（处理）
+                                                               super/true（本身的OntouchEvent处理）
+
+                                                        false（下一层的DispathTouchEvent）
+View
+                                                                                                        super/false(向上传递)
+
+                DispathTouchEvent                                                                   OntouchEvent
+
+                                                                                                         true（处理）

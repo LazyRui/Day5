@@ -1,0 +1,17 @@
+简述解决事件冲突的思路
+
+    1、首先我们要知道事件冲突。
+            发生在那个布局中
+
+           activit中的话重写两个方法
+                DiapathTouchEvevt和OnTouchEvent
+
+           ViewGroup中需要重写三个方法
+                DiapathTouchEvevt、oninterceptTouchEvent和OnTouchEvent
+
+           View中的话重写两个方法
+                DiapathTouchEvevt和OnTouchEvent
+
+         然后再根据需求来做出相应的设置
+
+         返回对应的内容。
